@@ -1,23 +1,26 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pepper by Sigma</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <meta name="viewport"
+            content="initial-scale = 1.333,
+            minimum-scale = 1.333,
+            maximum-scale = 1.333" />
+        <!-- <meta name="viewport" content="width=1280, initial-scale=1.33"> -->
+    </head>
+    <body>
+        <div id="container">
+            <!-- <div id="item"></div> -->
+            <div id="info"></div>
+            <div id="bpm-container">
+                <div id="bpm-output"></div>
+                <img id="heart" src="./img/heart.png" alt="">
+            </div>
 
-<div class="home">
+        </div>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+        <script type="text/javascript" src="./js/script.js"></script>
+    </body>
+</html>
